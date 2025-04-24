@@ -8,7 +8,7 @@ export const storage = defineStorage({
         allow.guest.to(['read', 'write']),
         allow.authenticated.to(['read', 'write', 'delete']),
     ],
-    'admin/*': [
+    'aws-storage-browser-demo/*': [
         allow.groups(['admin']).to(['read', 'write', 'delete']),
         allow.authenticated.to(['read'])
     ],
